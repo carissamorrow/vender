@@ -12,6 +12,10 @@ let vm = new VendingMachine(100, [{
   name: 'Mt. Dew',
   price: 1,
   quantity: 1
+}, {
+  name: 'Jerkey',
+  price: 2,
+  quantity: 1
 }])
 
 
