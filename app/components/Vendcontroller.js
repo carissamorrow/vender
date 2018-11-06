@@ -18,9 +18,11 @@ function drawProducts() {
     if (product.quantity > 0) {
       template += `
         <div>
-          <p>${product.name} - ${product.price} - ${product.quantity} - ${product.img}</p>
+          <img src="${product.img}" class= "image"/>
+          <p>${product.name} - ${product.price} - ${product.quantity} </p>
           <button onclick="app.controllers.vendController.vendItem(${i})">BUY</button>
         </div>
+        <button onclick="app.controllers.vendController.vendItem(${i})">Give Change</button>
       `
     }
   }

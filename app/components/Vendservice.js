@@ -1,7 +1,7 @@
 import VendingMachine from "../models/VendMachine.js";
 import VendFood from "../models/VendFood.js";
 let vm = new VendingMachine(100, [
-  new VendFood('fritos', 2, 1, "https://www.fritolay.com/images/default-source/blue-bag-image/fritos-original.png?sfvrsn=b704563a_2"),
+  new VendFood('fritos', 2, 1, "https://pics.drugstore.com/prodimg/595176/900.jpg"),
   new VendFood('Tab', .75, 1, "https://upload.wikimedia.org/wikipedia/commons/7/70/Tab_can.jpg"),
   new VendFood('Mt. Dew', 1, 1, "https://vignette.wikia.nocookie.net/mountaindew/images/9/90/Mountain-Dew-Can-17.png/revision/latest?cb=20170411162345")
 ])
