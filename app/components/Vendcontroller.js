@@ -49,7 +49,7 @@ export default class VendController {
   }
   vendChange(productIndex) {
     let item = vendService.vendItem(productIndex)
-    let template = "<p> 0</p>"
+    let template = "<p> 0 Transaction Complete</p>"
 
     document.getElementById("change").innerHTML = template
   }
