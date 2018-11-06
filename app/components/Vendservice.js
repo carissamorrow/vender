@@ -1,22 +1,10 @@
 import VendingMachine from "../models/VendMachine.js";
-
-let vm = new VendingMachine(100, [{
-  name: 'Fritos',
-  price: 1,
-  quantity: 3
-}, {
-  name: 'Tab',
-  price: .75,
-  quantity: 10
-}, {
-  name: 'Mt. Dew',
-  price: 1,
-  quantity: 1
-}, {
-  name: 'Jerkey',
-  price: 2,
-  quantity: 1
-}])
+import VendFood from "../models/VendFood.js";
+let vm = new VendingMachine(100, [
+  new VendFood('fritos', 2, 1, "https://www.fritolay.com/images/default-source/blue-bag-image/fritos-original.png?sfvrsn=b704563a_2"),
+  new VendFood('Tab', .75, 1, "https://upload.wikimedia.org/wikipedia/commons/7/70/Tab_can.jpg"),
+  new VendFood('Mt. Dew', 1, 1, "https://vignette.wikia.nocookie.net/mountaindew/images/9/90/Mountain-Dew-Can-17.png/revision/latest?cb=20170411162345")
+])
 
 
 export default class VendService {
