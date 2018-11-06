@@ -1,5 +1,6 @@
 import VendingMachine from "../models/VendMachine.js";
 import VendFood from "../models/VendFood.js";
+
 let vm = new VendingMachine(100, [
   new VendFood('fritos', 2, 1, "https://pics.drugstore.com/prodimg/595176/900.jpg"),
   new VendFood('Tab', .75, 1, "https://upload.wikimedia.org/wikipedia/commons/7/70/Tab_can.jpg"),

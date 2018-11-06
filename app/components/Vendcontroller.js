@@ -22,7 +22,7 @@ function drawProducts() {
           <p>${product.name} - ${product.price} - ${product.quantity} </p>
           <button onclick="app.controllers.vendController.vendItem(${i})">BUY</button>
         </div>
-        <button onclick="app.controllers.vendController.vendItem(${i})">Give Change</button>
+        <button onclick="app.controllers.vendController.vendChange(${i})">Give Change</button>
       `
     }
   }
@@ -40,8 +40,17 @@ export default class VendController {
     drawTotal(total)
   }
   vendItem(productIndex) {
-
     let item = vendService.vendItem(productIndex)
+    let template = "<p>You have Purchased</p>"
+    if (item) {
+      template += `<img src="${item.img}"/>`
+    }
+    document.getElementById("vended").innerHTML = template
+  }
+  vendChange(productIndex) {
+    let item = vendService.vendItem(productIndex)
+    let template = "<p> 0</p>"
 
+    document.getElementById("change").innerHTML = template
   }
 }
