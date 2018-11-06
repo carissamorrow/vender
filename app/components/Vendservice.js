@@ -18,7 +18,6 @@ let vm = new VendingMachine(100, [{
 export default class VendService {
 
   addQuarter() {
-    console.log(2)
     vm.currentTransaction += .25
     return vm.currentTransaction
   }
